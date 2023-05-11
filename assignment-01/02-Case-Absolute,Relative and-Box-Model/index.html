@@ -1,55 +1,199 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <title>Assignment 02</title>
+    <title>LayoutSet</title>
+    <link rel="stylesheet" href="assets/style/style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Noto+Serif:ital@0;1&display=swap"rel="stylesheet">
+
+    <style>
+        header {
+            border: 1px solid black;
+            position: relative;
+            height: 70px;
+            box-shadow: 1px 1px 7px 3px black;
+
+        }
+
+        header > img {
+            padding: 6px;
+            width: 190px;
+        }
+
+        header > ul {
+            position: absolute;
+            right: 18px;
+            top: 0px;
+            list-style: none;
+            bottom: 0;
+            margin: auto;
+            height: 21px;
+            font-family: 'Noto Serif', serif;
+            font-size: 20px
+        }
+
+        header > ul > li {
+            display: inline;
+            padding: 0px 10px 0px 10px;
+            cursor: pointer;
+        }
+
+        header > ul > li:hover {
+            color: blue;
+        }
+
+        /*header Close*/
+        /*main Start*/
+        main {
+            position: relative;
+        }
+
+        main > nav {
+            width: 300px;
+            background-color: #4C0182;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+            color: white;
+            font-size: 20px;
+        }
+
+        main > nav > ul > li {
+            padding: 10px;
+            list-style: none;
+            cursor: pointer;
+
+        }
+
+        main > nav > ul > li:hover {
+            color: khaki;
+        }
+
+        main > section {
+            margin-left: 300px;
+            padding: 10px 10px 10px 10px;
+        }
+
+        main > article {
+            height: 300px;
+            margin-left: 300px;
+            position: relative;
+        }
+
+        main > article > div {
+            border: 1px solid green;
+            height: 100%;
+            position: absolute;
+            width: calc(100% / 3);
+            display: inline;
+        }
+
+        main > article > div:nth-child(1) {
+            left: 0;
+            background: url("assets/style/img/code.gif");
+            background-size: contain;
+        }
+
+        main > article > div:nth-child(2) {
+            left: 0;
+            right: 0;
+            margin: auto;
+            background: url("assets/style/img/code.gif");
+            background-size: contain;
+        }
+
+        main > article > div:nth-child(3) {
+            right: 0;
+            background: url("assets/style/img/code.gif");
+            background-size: contain;
+
+        }
+
+        body > footer {
+            height: 40px;
+            background: #676565;
+        }
+
+        body > footer > p {
+            color: white;
+            margin-top: 0;
+            text-align: center;
+            position: relative;
+            top: 12px;
+        }
+
+
+    </style>
 </head>
 <body>
 <header>
-    <nav>
-
-    <div><img src="assets/img/ijse.png" alt="ijse-logo"></div>
+    <img src="assets/style/img/download.png" alt="heder_topic">
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">About Us</a></li>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Contain</li>
+        <li>About Us</li>
     </ul>
-    </nav>
+
 </header>
 <main>
-    <aside>
+    <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">About Us</a></li>
+            <li>Home</li>
+            <li>Services</li>
+            <li>Contain</li>
+            <li>About Us</li>
         </ul>
-    </aside>
-    <section>
+
+    </nav>
+
+    <!--dakunu pasa kotasa-->
+    <article>
+        <!--only Animation-->
         <div></div>
-        <section>
-            <div><img src="assets/img/giphy.webp" alt="" width="100%"></div>
-            <div><img src="assets/img/giphy.webp" alt="" width="100%"></div>
-            <div><img src="assets/img/giphy.webp" alt="" width="100%"></div>
-        </section>
-        <article>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae crem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid,rem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid,rem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid,onsequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consequuntur culpa cumque dicta dolore dolores exercitationem hic laudantium, nam nobis nostrum, obcaecati officia quasi quibusdam quod sit velit? Aliquid, facere.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab architecto asperiores atque consequuntur error modi mollitia nesciunt nostrum optio quis reiciendis repellat repudiandae, rerum similique temporibus veritatis voluptatem! Sapiente, temporibus!</p>
-        </article>
+        <div></div>
+        <div></div>
+    </article>
+    <section>   <!--paragraph Set-->
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus assumenda autem blanditiis delectus
+            deserunt, earum fugit minima nisi officia pariatur provident quaerat quam ratione repudiandae suscipit
+            ullam veritatis voluptate voluptatum!</p>
+        <p>Ad aperiam fugit ipsam, iure molestiae mollitia nostrum odio repellendus temporibus tenetur voluptas
+            voluptatem! Aliquam consequatur delectus dolor esse fuga harum incidunt inventore ipsam modi nobis qui
+            quidem tenetur, totam?</p>
+        <p>Eos nulla possimus qui quidem quod rem veritatis? Adipisci, dignissimos doloremque dolores ea eius
+            eligendi, enim error, id in minima molestias nam quas? Assumenda consequuntur deleniti expedita harum
+            modi placeat.</p>
+        <p>Debitis ipsam iste non possimus sed soluta unde voluptatem. A animi aspernatur corporis dicta eaque
+            eveniet facilis id in obcaecati odit placeat quo rem repellendus, rerum tempora, vel velit,
+            voluptatibus.</p>
+        <p>A ab exercitationem, impedit magni perferendis possimus totam unde. Amet at, commodi corporis
+            exercitationem iure laboriosam necessitatibus pariatur praesentium quas quasi repudiandae sit tempora
+            tenetur totam velit vero voluptas voluptates?</p>
+        <p>Eos iusto labore mollitia, nam quod similique suscipit? Assumenda aut commodi deserunt dolorum facere
+            illo impedit iste iure labore magni nobis quam quo quod rerum, sed, sint soluta ut voluptates.</p>
+        <p>A ab exercitationem, impedit magni perferendis possimus totam unde. Amet at, commodi corporis
+            exercitationem iure laboriosam necessitatibus pariatur praesentium quas quasi repudiandae sit tempora
+            tenetur totam velit vero voluptas voluptates?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab accusantium ad amet aut autem corporis culpa
+            cum dolorum,
+            enim ex labore natus nemo odit officiis porro qui quisquam sapiente soluta?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores at consequatur dolore eum fugit
+            in ipsam modi recusandae vitae! Consequatur, consequuntur doloremque doloribus error et eum harum id in
+            molestiae nesciunt nihil, non nulla placeat quae reprehenderit, repudiandae veritatis.</p>
+
     </section>
+    <!--yatama kotasa-->
 </main>
 <footer>
-        <h3>Developed By IJSE</h3>
+
+    <p>Developed By IJSE</p>
 
 </footer>
+
+
 </body>
 </html>
